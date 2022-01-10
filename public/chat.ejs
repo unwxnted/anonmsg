@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>anonMSG</title>
+    <link rel="stylesheet" type="text/css" href="chat.css"/>
+  </head>
+  <body>
+
+    
+
+    <ul id="messages">
+
+    
+
+      <% for(var i=0;i < message.length ;i++){ %>
+
+        <li>
+          <%= message[i].author + " : " + message[i].message_content %>
+        </li>
+
+      <% } %>
+
+
+    </ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><input id="nickname" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
