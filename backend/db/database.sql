@@ -11,6 +11,6 @@ CREATE TABLE messages_list(
 
 DESCRIBE messages_list;
 
-INSERT messages_list(author, message_content) values ('weakness', 'hello world');
+INSERT messages_list(author, message_content) values ('unwxnted', 'hello world');
 
 SELECT * FROM messages_list;
